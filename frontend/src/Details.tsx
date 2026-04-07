@@ -46,11 +46,13 @@ function Details() {
             <p><strong>Genre:</strong> {genres.find(g => g.id === movie?.genreId)?.name}</p>   
             <p><strong>Published Critic Reviews:</strong> {reviews.filter(r => r.isPublished).length}</p>    
         <br></br>
+        
       <p><strong>Published Reviews Down Here:</strong></p>
       <hr></hr>
        {reviews.filter(r => r.isPublished).map(r => (
   <div key={r.id}>
-    <p>{r.content}</p>
+     <p>Name: {r.createdBy}</p>
+    <p>Said: {r.content}</p>
     <p>Rating: {r.rating}</p>
     <hr></hr>
   </div>
