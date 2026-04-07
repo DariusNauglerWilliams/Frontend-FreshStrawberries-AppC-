@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 function DisplayMovies() {
   const [data, setData] = useState([]); //set empty array for data
@@ -61,9 +61,12 @@ useEffect(() => { //runs when component loads
         <h2>{movie.title}</h2>
         <img src={movie.image} width="400" />
         <br></br>
-<a href={`/movies/${movie.id}`}>
-    <button>See Details</button>
-</a>
+
+<Link to="/details">
+  <button>Click To See Details</button>
+</Link>
+
+       
 
        <p>
         Average Critic Score: {(() => {

@@ -2,7 +2,7 @@
 function Details() {
   return (
 
-<a href={`/movies`}>
+<a href={`/#`}>
     <button>Go Back</button>
 </a>
 
