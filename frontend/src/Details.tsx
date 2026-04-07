@@ -21,8 +21,18 @@ function Details() {
       <h2>Movie Details</h2>
       <div>
         <p><strong>Title:</strong> {movie.title}</p>
-        <p><strong>ID:</strong> {movie.id}</p>
+         <img src={movie.image} width="400" />
         <p><strong>Description:</strong> {movie.description}</p>
+        <p><strong>Director:</strong> {movie.director}</p>
+         <p><strong>Release Year:</strong> {movie.releaseYear}</p>
+        <p><strong>Duration:</strong> {movie.duration}</p>
+         <p><strong>Rating:</strong> {movie.ratingId}</p>
+            <p><strong>Genre:</strong> {movie.genreId}</p>   
+             <p><strong>Published Critic Reviews:</strong> {movie.IsPublished}</p>      
+        
+      
+       
+
       </div>
 
 
