@@ -18,10 +18,10 @@ function Details() {
 
      
 
-            fetch(`https://localhost:7195/api/reviews`).then(response => response.json()).then(data => setReviews(data));
-
+            fetch(`https://localhost:7195/api/reviews/${id}`).then(response => response.json()).then(data => setReviews(data));
+     
        
-  }, [id]);
+  }, []);
 
   return (
     <>
