@@ -28,7 +28,7 @@ useEffect(() => { //runs when component loads
 
 
     
-      const reviewResult = await reviewResponse.json();
+      const reviewResult = reviewResponse.ok ? await reviewResponse.json() : [];
       setReviews(reviewResult); //set reviews to review result
       
 
@@ -49,7 +49,7 @@ useEffect(() => { //runs when component loads
 
   return (
     <>
-    <div className="MovieList">
+    <div className="MovieList-cards">
       <h1>Movie List</h1>
 
     {/*If error first display it */}
@@ -59,15 +59,42 @@ useEffect(() => { //runs when component loads
     {data.map((movie) => (
       <div key={movie.id}>
         <h2>{movie.title}</h2>
-        <img src={movie.image} width="200" />
+        <img src={movie.image} width="400" />
+
+
+       <p>
+        Average Critic Score: {(() => {
+          //get total movie reviews 
+          const reviewsFilter = reviews.filter((review) => review.movieId === movie.id);
+
+          // 2. check if none
+          if (reviewsFilter.length === 0){
+            return "No Reviews Made";
+          }
+
+          // 3. calculate total
+          const reviewsTotal = reviewsFilter.reduce((sum, review) => sum + review.rating , 0);
+
+          // 4. calculate average
+          const averageReview = reviewsTotal / reviewsFilter.length
+           
+          
+
+          // 5. return result
+          return averageReview.toFixed(0);
+
+        })()} Out of 5
+        
+        
+        
+        
+        </p> 
+
         
       </div>
     ))}
 
-    {reviews.map((review) => (
-      <p key={review.id}>{review.createdBy}</p>
-    ))}
-
+   
 
 </div>
 
