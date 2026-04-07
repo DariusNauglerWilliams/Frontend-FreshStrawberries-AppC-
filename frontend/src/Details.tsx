@@ -12,6 +12,19 @@ function Details() {
     fetch(`https://localhost:7195/api/movies/${id}`)
       .then((response) => response.json())
       .then((result) => setMovie(result));
+
+
+       fetch(`https://localhost:7195/api/ratings/${id}`)
+      .then((response) => response.json())
+      .then((result) => setMovie(result));
+
+      fetch(`https://localhost:7195/api/genres/${id}`)
+      .then((response) => response.json())
+      .then((result) => setMovie(result));
+
+          fetch(`https://localhost:7195/api/reviews/${id}`)
+      .then((response) => response.json())
+      .then((result) => setMovie(result));
   }, []);
 
   return (
