@@ -9,20 +9,16 @@ function Details() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    if (!id) return;
+    if (!id === null) return;
 
-    fetch(`https://localhost:7195/api/movies/${id}`)
-      .then((response) => response.json())
-      .then((result) => setMovie(result));
+    fetch(`https://localhost:7195/api/movies/${id}`).then(response => response.json()).then(data => setMovie(data));
 
       fetch(`https://localhost:7195/api/ratings`).then(response => response.json()).then(data => setRatings(data));
       fetch(`https://localhost:7195/api/genres`).then(response => response.json()).then(data => setGenres(data));
 
      
 
-          fetch(`https://localhost:7195/api/reviews/${id}`)
-      .then((response) => response.json())
-      .then((result) => setReviews(result));
+            fetch(`https://localhost:7195/api/reviews/${id}`).then(response => response.json()).then(data => setReviews(data));
 
        
   }, []);
@@ -51,9 +47,9 @@ function Details() {
       <hr></hr>
        {reviews.filter(r => r.isPublished).map(r => (
   <div key={r.id}>
-     <p>Name: {r.createdBy}</p>
-    <p>Said: {r.content}</p>
-    <p>Rating: {r.rating}</p>
+     <p><strong>Name:</strong> {r.createdBy}</p>
+    <p><strong>Said:</strong> {r.content}</p>
+    <p><strong>Rating:</strong> {r.rating}</p>
     <hr></hr>
   </div>
 ))}
