@@ -1,10 +1,35 @@
 
-function Details() {
-  return (
+import { Link, useParams } from "react-router-dom";
 
-<a href={`/#`}>
-    <button>Go Back</button>
-</a>
+function Details() {
+  const { id } = useParams();
+  return (
+    <>
+
+
+      <h2>Movie Details: {id}</h2>
+      <Link to="/">
+        <button>Go Back</button>
+      </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </>
 
 
 

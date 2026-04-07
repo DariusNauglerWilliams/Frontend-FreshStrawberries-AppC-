@@ -62,7 +62,7 @@ useEffect(() => { //runs when component loads
         <img src={movie.image} width="400" />
         <br></br>
 
-<Link to="/details">
+<Link to={`/details/${movie.id}`}>
   <button>Click To See Details</button>
 </Link>
 
