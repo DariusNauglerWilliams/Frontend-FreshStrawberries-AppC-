@@ -25,7 +25,7 @@ function Details() {
 
   return (
     <>
-   {/* Loading Before movie details incase not loaded in yet*/}
+   {/* test push.      Loading Before movie details incase not loaded in yet*/}
     {!movie ? (
       <p>Loading...</p>
     ) : (
