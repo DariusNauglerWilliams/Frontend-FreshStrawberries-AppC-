@@ -6,17 +6,38 @@
 .MovieList-cards{
 
 
+
 }
 
-.List-Movie-Title{}
+.List-Movie-Title{
 
-.Title-Movie{}
 
-.Image-Display{}
 
-.Details-Button-Go{}
+}
 
-.Critic-Score-Text{}
+.Title-Movie{
+
+
+
+}
+
+.Image-Display{
+
+
+
+}
+
+.Details-Button-Go{
+
+
+
+}
+
+.Critic-Score-Text{
+
+
+
+}
 
 
 
@@ -24,34 +45,98 @@
 
 
 /* Details.tsx CSS */
-.Movie-Details{}
+.Movie-Details{
 
-.Movie-Title{}
 
-.Movie-Image{}
 
-.Movie-Description{}
+}
 
-.Movie-Director{}
+.Movie-Title{
 
-.Movie-Release{}
 
-.Movie-Duration{}
 
-.Movie-Rating{}
+}
 
-.Movie-Genre{}
+.Movie-Image{
 
-.Published-Reviews{}
 
-.Published-Display-text{}
 
-.Review-Cards{}
+}
 
-.Review-Name{}
+.Movie-Description{
 
-.Review-Said{}
 
-.Review-Rating-Given{}
 
-.Go-Back-Button{}
+}
+
+.Movie-Director{
+
+
+
+}
+
+.Movie-Release{
+
+
+
+}
+
+.Movie-Duration{
+
+
+
+}
+
+.Movie-Rating{
+
+
+
+}
+
+.Movie-Genre{
+
+
+
+}
+
+.Published-Reviews{
+
+
+
+}
+
+.Published-Display-text{
+
+
+
+}
+
+.Review-Cards{
+
+
+
+}
+
+.Review-Name{
+
+
+
+}
+
+.Review-Said{
+
+
+
+}
+
+.Review-Rating-Given{
+
+
+
+}
+
+.Go-Back-Button{
+
+
+
+}
