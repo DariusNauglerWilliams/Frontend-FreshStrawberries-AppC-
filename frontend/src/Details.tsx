@@ -31,25 +31,25 @@ function Details() {
     ) : (
       <>
       <h2>Movie Details</h2>
-      <div>
-        <p><strong>Title:</strong> {movie.title}</p>
-         <img src={movie.image} width="400" />
-        <p><strong>Description:</strong> {movie.description}</p>
-        <p><strong>Director:</strong> {movie.director}</p>
-         <p><strong>Release Year:</strong> {movie.releaseYear}</p>
-        <p><strong>Duration:</strong> {movie.duration}</p>
-         <p><strong>Rating:</strong> {ratings.find(r => r.id === movie?.ratingId)?.name}</p>
-            <p><strong>Genre:</strong> {genres.find(g => g.id === movie?.genreId)?.name}</p>   
-            <p><strong>Published Critic Reviews:</strong> {reviews.filter(r => r.isPublished).length}</p>    
+      <div className="Movie-Details">
+        <p className="Movie-Title"><strong>Title:</strong> {movie.title}</p>
+         <img className="Movie-Image" src={movie.image} width="400" />
+        <p className="Movie-Description"><strong>Description:</strong> {movie.description}</p>
+        <p className="Movie-Director"><strong>Director:</strong> {movie.director}</p>
+         <p className="Movie-Release"><strong>Release Year:</strong> {movie.releaseYear}</p>
+        <p className="Movie-Duration"><strong>Duration:</strong> {movie.duration}</p>
+         <p className="Movie-Rating"><strong>Rating:</strong> {ratings.find(r => r.id === movie?.ratingId)?.name}</p>
+            <p className="Movie-Genre"><strong>Genre:</strong> {genres.find(g => g.id === movie?.genreId)?.name}</p>   
+            <p className="Published-Reviews"><strong>Published Critic Reviews:</strong> {reviews.filter(r => r.isPublished).length}</p>    
         <br></br>
         
-      <p><strong>Published Reviews Down Here:</strong></p>
+      <p className="Published-Display-text"><strong>Published Reviews Down Here:</strong></p>
       <hr></hr>
        {reviews.filter(r => r.isPublished).map(r => (
-  <div key={r.id}>
-     <p><strong>Name:</strong> {r.createdBy}</p>
-    <p><strong>Said:</strong> {r.content}</p>
-    <p><strong>Rating:</strong> {r.rating}</p>
+  <div className="Review-Cards" key={r.id}>
+     <p className="Review-Name"><strong>Name:</strong> {r.createdBy}</p>
+    <p className="Review-Said"><strong>Said:</strong> {r.content}</p>
+    <p className="Review-Rating-Given"><strong>Rating:</strong> {r.rating}</p>
     <hr></hr>
   </div>
 ))}
@@ -60,7 +60,7 @@ function Details() {
 
 
       <Link to="/">
-        <button>Go Back</button>
+        <button className="Go-Back-Button">Go Back</button>
       </Link>
       </>
     )}

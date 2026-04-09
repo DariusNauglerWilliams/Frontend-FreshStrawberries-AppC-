@@ -50,7 +50,7 @@ useEffect(() => { //runs when component loads
   return (
     <>
     <div className="MovieList-cards">
-      <h1>Movie List</h1>
+      <h1 className="List-Movie-Title">Movie List</h1>
 
     {/*If error first display it */}
     {error && <p>{error}</p>}
@@ -58,17 +58,17 @@ useEffect(() => { //runs when component loads
     {/* Else If no error, display data */}
     {data.map((movie) => (
       <div key={movie.id}>
-        <h2>{movie.title}</h2>
-        <img src={movie.image} width="400" />
+        <h2 className="Title-Movie">{movie.title}</h2>
+        <img className="Image-Display" src={movie.image} width="400" />
         <br></br>
 
 <Link to={`/details/${movie.id}`}>
-  <button>Click To See Details</button>
+  <button className="Details-Button-Go">Click To See Details</button>
 </Link>
 
        
 
-       <p>
+       <p className="Critic-Score-Text">
         Average Critic Score: {(() => {
           //get total movie reviews 
           const reviewsFilter = reviews.filter((review) => review.movieId === movie.id);
