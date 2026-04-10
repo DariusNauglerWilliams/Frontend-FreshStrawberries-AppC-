@@ -51,7 +51,7 @@ text-align: center;
 /* Details.tsx CSS */
 .Movie-Details{
 
-
+display: flex;
 
 }
 
@@ -63,10 +63,9 @@ text-align: center;
 
 .Movie-Image{
     display: block;
-   
-    margin-right: auto;
-    width: 820px;
-
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
 }
 
 .Movie-Description{
@@ -140,6 +139,15 @@ text-align: center;
 
 .Go-Back-Button{
 
+ margin-top: 500px;
+    align-self: flex-start; /* keeps it with text, not stretched */
 
+}
 
+.Movie-Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers everything vertically */
+    height: 100vh;
+    padding: 40px;
 }
