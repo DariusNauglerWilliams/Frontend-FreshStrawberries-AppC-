@@ -49,8 +49,9 @@ useEffect(() => { //runs when component loads
 
   return (
     <>
+     <h1 className="List-Movie-Title">Current List Of Movies</h1>
     <div className="MovieList-cards">
-      <h1 className="List-Movie-Title">Movie List</h1>
+     
 
     {/*If error first display it */}
     {error && <p>{error}</p>}
@@ -59,7 +60,7 @@ useEffect(() => { //runs when component loads
     {data.map((movie) => (
       <div key={movie.id}>
         <h2 className="Title-Movie">{movie.title}</h2>
-        <img className="Image-Display" src={movie.image} width="400" />
+        <img className="Image-Display" src={movie.image} width="360" />
         <br></br>
 
 <Link to={`/details/${movie.id}`}>
@@ -90,8 +91,11 @@ useEffect(() => { //runs when component loads
           return averageReview.toFixed(0);
 
         })()} Out of 5
+     <br></br>
+     <br></br>
+     
         
-        
+       
         
         
         </p> 

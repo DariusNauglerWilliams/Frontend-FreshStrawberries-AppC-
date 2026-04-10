@@ -30,10 +30,10 @@ function Details() {
       <p>Loading...</p>
     ) : (
       <>
-      <h2>Movie Details</h2>
+      
       <div className="Movie-Details">
         <p className="Movie-Title"><strong>Title:</strong> {movie.title}</p>
-         <img className="Movie-Image" src={movie.image} width="400" />
+         <img className="Movie-Image" src={movie.image}/>
         <p className="Movie-Description"><strong>Description:</strong> {movie.description}</p>
         <p className="Movie-Director"><strong>Director:</strong> {movie.director}</p>
          <p className="Movie-Release"><strong>Release Year:</strong> {movie.releaseYear}</p>
@@ -44,13 +44,13 @@ function Details() {
         <br></br>
         
       <p className="Published-Display-text"><strong>Published Reviews Down Here:</strong></p>
-      <hr></hr>
+    
        {reviews.filter(r => r.isPublished).map(r => (
   <div className="Review-Cards" key={r.id}>
      <p className="Review-Name"><strong>Name:</strong> {r.createdBy}</p>
     <p className="Review-Said"><strong>Said:</strong> {r.content}</p>
     <p className="Review-Rating-Given"><strong>Rating:</strong> {r.rating}</p>
-    <hr></hr>
+   
   </div>
 ))}
 
@@ -63,6 +63,7 @@ function Details() {
         <button className="Go-Back-Button">Go Back</button>
       </Link>
       </>
+      
     )}
 
 
