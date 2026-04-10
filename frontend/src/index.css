@@ -1,66 +1,125 @@
 /* CSS for design bootstrap all in this file location  */
 
 
+
+.Navbar-Container{
+    display: flex;
+    padding: 12px;
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.Navbar-Logo{
+    
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
 /* DisplayMovies.tsx CSS */
 
 .MovieList-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 75px;
+    border-style: solid;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 60px;
+    margin: 38px;
+    background-color: #f1f1f1;
     
 }
 
 .List-Movie-Title{
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 text-align: center;
-
+font-family: 'Monserrat', 'Poppins', 'Inter', 'Segoe UI', 'Arial', sans-serif;
+font-weight: 700;
+    border-style: solid;
+    border: 3px solid black;
+    display: block;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 32px;
+    background-color: #f1f1f1;
 
 }
 
 .Title-Movie{
 
+ font-size: 40px;
+  padding-bottom: 20px;
+ 
+ text-align: center;
 
-
+font-family: 'Monserrat', 'Poppins', 'Inter', 'Segoe UI', 'Arial', sans-serif;
+font-weight: 700;
+letter-spacing: 1px;
+  margin:  auto;
+  
+  
 }
 
 .Image-Display{
-
-
-
+ 
+position: relative;
+text-align: center;
 }
 
 .Details-Button-Go{
+width: 360px;
+padding-bottom: auto;
+border: none;
+background-color: #000000;
+color: white;
+font-family: 'Inter', 'Sego UI';
+}
 
-
-
+.Details-Button-Go:hover {
+    background: #222;         /* Slightly lighter on hover */
 }
 
 .Critic-Score-Text{
 
-
+margin-top: 40px;
 
 }
 
 
-
+.text-top{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: 'Monserrat', 'Poppins', 'Inter', 'Segoe UI', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
 
 
 
 /* Details.tsx CSS */
+
+
+
+/* MAIN LAYOUT */
 .Movie-Details{
-
-display: flex;
-
+    display: flex;
 }
 
-.Movie-Title{
-
-
-
-}
-
+/* IMAGE (KEEP SAME LOOK) */
 .Movie-Image{
     display: block;
     height: 100vh;
@@ -68,86 +127,71 @@ display: flex;
     object-fit: cover;
 }
 
-.Movie-Description{
-
-
-}
-
-.Movie-Director{
-
-
-
-}
-
-.Movie-Release{
-
-
-
-}
-
-.Movie-Duration{
-
-
-}
-
-.Movie-Rating{
-
-
-
-}
-
-.Movie-Genre{
-
-
-}
-
-.Published-Reviews{
-
-
-
-}
-
-.Published-Display-text{
-
-
-
-}
-
-.Review-Cards{
-
-
-
-}
-
-.Review-Name{
-
-
-
-}
-
-.Review-Said{
-
-
-
-}
-
-.Review-Rating-Given{
-
-
-
-}
-
-.Go-Back-Button{
-
- margin-top: 500px;
-    align-self: flex-start; /* keeps it with text, not stretched */
-
-}
-
+/* RIGHT SIDE */
 .Movie-Info{
     display: flex;
     flex-direction: column;
-    justify-content: center; /* centers everything vertically */
-    height: 100vh;
-    padding: 40px;
+    justify-content: center;
+    padding: 60px;
+    max-width: 900px;   /* ⬅️ bigger */
+    width: 100%;        /* ⬅️ fill space */
+}
+
+/* TITLE */
+.Movie-Title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.Movie-Description{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* INFO TEXT */
+.Movie-Director,
+.Movie-Release,
+.Movie-Duration,
+.Movie-Rating,
+.Movie-Genre,
+.Published-Reviews{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* SECTION TITLE */
+.Published-Display-text{
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* REVIEWS */
+.Review-Cards{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: #fafafa;
+}
+.Review-Said{
+    font-size: 16px;
+}
+
+.Review-Name{
+    font-size: 16px;
+}
+
+.Review-Rating-Given{
+    font-size: 15px;
+}
+
+/* BUTTON */
+.Go-Back-Button{
+    margin-top: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
 }

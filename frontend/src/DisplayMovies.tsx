@@ -49,10 +49,10 @@ useEffect(() => { //runs when component loads
 
   return (
     <>
-     <h1 className="List-Movie-Title">Current List Of Movies</h1>
+     
     <div className="MovieList-cards">
      
-
+   <h1 className="text-top">Current List Of Movies</h1>
     {/*If error first display it */}
     {error && <p>{error}</p>}
 
@@ -64,7 +64,7 @@ useEffect(() => { //runs when component loads
         <br></br>
 
 <Link to={`/details/${movie.id}`}>
-  <button className="Details-Button-Go">Click To See Details</button>
+  <button className="Details-Button-Go">Click here to see more</button>
 </Link>
 
        
