@@ -63,50 +63,42 @@ text-align: center;
 
 .Movie-Image{
     display: block;
-    margin-left: auto;
+   
     margin-right: auto;
     width: 820px;
-margin-bottom: 15px;
+
 }
 
 .Movie-Description{
 
-text-align: center;
-margin-right: 700px;
+
 }
 
 .Movie-Director{
 
-text-align: center;
-margin-right: 726px;
+
 
 }
 
 .Movie-Release{
 
-text-align: center;
-margin-right: 686px;
+
 
 }
 
 .Movie-Duration{
 
-text-align: center;
-margin-right: 695px;
 
 }
 
 .Movie-Rating{
 
-text-align: center;
-margin-right: 720px;
+
 
 }
 
 .Movie-Genre{
 
-text-align: center;
-margin-right: 674px;
 
 }
 
