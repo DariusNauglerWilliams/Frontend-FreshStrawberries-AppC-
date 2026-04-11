@@ -5,7 +5,7 @@
 .Navbar-Container{
     display: flex;
     padding: 12px;
-    background-color: #ff1a1a;
+    background-color: #c70202;
     color: white;
     font-size: 30px;
     
@@ -95,7 +95,8 @@ font-family: 'Inter', 'Sego UI';
 
 .Critic-Score-Text{
 
-margin-top: 40px;
+margin-top: 20px;
+text-align: center;
 
 }
 
@@ -122,7 +123,7 @@ margin-top: 40px;
     display: flex;
 }
 
-/* IMAGE (KEEP SAME LOOK) */
+/* IMAGE */
 .Movie-Image{
     display: block;
    
@@ -137,8 +138,8 @@ margin-top: 40px;
     flex-direction: column;
     justify-content: center;
     padding: 60px;
-    max-width: 900px;   /* ⬅️ bigger */
-    width: 100%;        /* ⬅️ fill space */
+    max-width: 900px;   /* bigger */
+    width: 100%;        /*  fill space */
 }
 
 /* TITLE */

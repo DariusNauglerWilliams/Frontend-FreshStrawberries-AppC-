@@ -88,9 +88,9 @@ useEffect(() => { //runs when component loads
           
 
           // 5. return result
-          return averageReview.toFixed(0);
+          return  "⭐".repeat(averageReview);  //return star rating based on average review, max 5 stars
 
-        })()} Out of 5
+        })()} 
      <br></br>
      <br></br>
      
