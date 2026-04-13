@@ -136,10 +136,12 @@ text-align: center;
 .Movie-Info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 60px;
     max-width: 900px;   /* bigger */
     width: 100%;        /*  fill space */
+    overflow-y: auto;
+    max-height: 100vh;
 }
 
 /* TITLE */
